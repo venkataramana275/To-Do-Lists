@@ -1,0 +1,163 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  transition: background 0.3s, color 0.3s;
+  color: #333;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.container.dark {
+  background: #1e1e1e;
+}
+
+h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-container input,
+.input-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #218838;
+}
+
+.progress-tracker {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.progress-tracker progress {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.filters button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filters button.active {
+  background: #007bff;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+
+li.dark {
+  background: #333;
+  color: #fff;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.edit-btn:hover {
+  color: #007bff;
+}
+
+.delete-btn:hover {
+  color: #dc3545;
+}
+
+.dark-mode-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode-btn:hover {
+  background: #555;
+}
+
+/* Dark Mode */
+body.dark .container {
+  background: #222;
+}
+
+body.dark li {
+  background: #333;
+}
+
+body.dark .filters button.active {
+  background: #0056b3;
+}
+
+body.dark .dark-mode-btn {
+  background: #fff;
+  color: #333;
+}
+
